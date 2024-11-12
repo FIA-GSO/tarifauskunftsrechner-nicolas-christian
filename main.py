@@ -3,8 +3,8 @@ preis_kinder = 2.5
 preis_jugendliche = 3.5
 preis_premium = 3.0
 preis_basis = 4.0
-
-while (True):
+preis_neu_berechnen = "ja"
+while preis_neu_berechnen == "ja":
     print(" ### Tarifauskunftsrechner Museum XXX ### ")
     print(" Hallo, geben Sie bitte Ihr Alter ein.")
     alter_gast = int(input())
@@ -34,7 +34,7 @@ while (True):
     print("für eine weitere abfrage geben sie 'ja' ein für keine weitere Abfrage geben sie 'nein' ein.")
     neustart = input()
     if neustart == "ja":
-        continue
+        preis_neu_berechnen = "ja"
     if neustart == "nein":
-        break
+        preis_neu_berechnen = "nein"
     print("Viel Spaß!")

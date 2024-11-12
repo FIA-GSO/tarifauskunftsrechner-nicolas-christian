@@ -43,7 +43,7 @@ while (True):
     print("für eine weitere abfrage geben sie 'ja' ein für keine weitere Abfrage geben sie 'nein' ein.")
     neustart = input()
     if neustart == "ja":
-        continue
+        preis_neu_berechnen = "ja"
     if neustart == "nein":
-        break
+        preis_neu_berechnen = "nein"
     print("Viel Spaß!")
